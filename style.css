@@ -23,31 +23,31 @@
 
 @font-face{
 	font-family: "Milo";
-	src: url("/assets/UHFonts/MiloOT-Medi.otf") format("otf");
+	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/MiloOT-Medi.otf") format("otf");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Milo";
-	src: url("/assets/UHFonts/MiloOT-MediIta.otf") format("otf");
+	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/MiloOT-MediIta.otf") format("otf");
 	font-weight: 400;
 	font-style: italic;
 }
 @font-face{
 	font-family: "Milo";
-	src: url("/assets/UHFonts/MiloOT-Bold.otf") format("otf");
+	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/MiloOT-Bold.otf") format("otf");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Milo";
-	src: url("/assets/UHFonts/MiloOT-BoldIta.otf") format("otf");
+	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/MiloOT-BoldIta.otf") format("otf");
 	font-weight: 700;
 	font-style: italic;
 }
 @font-face{
 	font-family: "LeagueGothic";
-	src: url("/assets/UHFonts/LeagueGothic-Regular.otf") format("otf");
+	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/LeagueGothic-Regular.otf") format("otf");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -649,13 +649,13 @@ hr {
 .clear{ clear: both; }
 
 
-header{
+header .hero{
 	position: relative;
 	height: 450px; 
-	background-image: url(/assets/images/page-header-current-students.jpg);
+	background-image: url(https://ronal-infante.github.io/UHID-graduate-showcase/assets/images/page-header-current-students.jpg);
 	background-attachment: fixed;
 }
-header h1{
+header .hero h1{
 	background: #c8102e;
     color: white;
     display: inline-block;
