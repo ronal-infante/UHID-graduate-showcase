@@ -672,6 +672,13 @@ header .hero h1{
 
 .entry .image-slider{
 }
+.entry .image-slider .slide{
+	
+}
+.entry .image-slider .slide img{
+	float: left;
+	width: 33.333%;
+}
 
 .entry .headshot{
 	position: relative;
