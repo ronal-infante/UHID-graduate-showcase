@@ -669,12 +669,32 @@ header .hero h1{
 
 .entry{
 }
+
 .entry .image-slider{
 }
+
 .entry .headshot{
 	float: left;
-	margin-right: 1.5rem;
 }
+
+.entry .headshot:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.entry .headshot img{
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.headshot:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
 .entry .details{
 }
 
