@@ -674,6 +674,7 @@ header .hero h1{
 }
 
 .entry .headshot{
+	position: relative;
 	float: left;
 }
 
