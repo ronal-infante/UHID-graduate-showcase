@@ -731,6 +731,7 @@ header .hero h1{
 
 .entry .headshot-container{
 	border-left: 6px solid white;
+	padding: 0;
 }
 .entry .headshot{
 	position: relative;
