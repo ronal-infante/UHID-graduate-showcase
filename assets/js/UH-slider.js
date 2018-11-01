@@ -1,1 +1,5 @@
-console.log("on");
+$(document).ready(function(){
+    $("img").click(function(){
+        $(this).hide();
+    });
+});

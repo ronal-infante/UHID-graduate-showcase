@@ -729,6 +729,9 @@ header .hero h1{
     cursor: pointer;
 }
 
+.entry .headshot-container{
+	border-left: 6px solid white;
+}
 .entry .headshot{
 	position: relative;
 }
