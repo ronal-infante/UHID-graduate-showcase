@@ -130,6 +130,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
+	color: #960C22;
 }
 
 a:active, a:hover {
@@ -634,7 +635,7 @@ hr {
 	margin-right: 91.66667%
 }
 
-.no-padding {
+body .no-padding {
 	padding-right: 0;
 	padding-left: 0;
 	padding-top: 0;
@@ -651,9 +652,6 @@ hr {
 
 header .hero{
 	position: relative;
-	height: 450px; 
-	background-image: url(https://ronal-infante.github.io/UHID-graduate-showcase/assets/images/page-header-current-students.jpg);
-	background-attachment: fixed;
 }
 header .hero h1{
 	background: #c8102e;
@@ -661,16 +659,27 @@ header .hero h1{
     display: inline-block;
     letter-spacing: 0;
     margin: 0;
-    padding: .625rem 1.25rem .625rem 0;
+    padding: 0.625rem 1.25rem 0.625rem 40px;
     position: absolute;
     bottom: 2.5rem;
     left: 0;
+    line-height: 1;
+}
+
+
+#filter label{
+	display: block;
+	font-size: 1.3rem;
+
+}
+#filter label input{
+	margin-right: 8px;
 }
 
 .entry{
 }
 
-.entry:nth-child(even) {
+.entry:nth-of-type(even) {
     clear: both;
 }
 
@@ -678,39 +687,48 @@ header .hero h1{
 	position: relative;
 	overflow: hidden;
 }
-.entry .image-slider .slide:first-of-type{	
+.image-slider:after {
+    content: "";
+    display: block;
+    padding-bottom: 33.333%;
+}
+.entry .image-slider .slide{	
+	transition: all 0.3s ease-in-out;
 	position: absolute;
-	left: 0;
 	top: 0;
 }
-.entry .image-slider .slide:last-of-type{
-	position: absolute;
+.entry .image-slider .slide:first-of-type{	
+	left: 0;
+}
+.entry .image-slider .slide:nth-of-type(2){
 	left: 100%;
-	top: 0;	
 }
 .entry .image-slider .slide img{
 	float: left;
 	width: 33.333%;
 }
-.entry .image-slider .nav-dots{
+.entry .image-slider .slide input[type='radio']{
+	width: 0;
 }
-.entry .image-slider .nav-dots input[type='radio']{
-	position: absolute;
-	opacity: 0;
+
+.entry .image-slider .nav-dots {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    margin-left: -31px;
 }
 .entry .image-slider .nav-dots label{
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    margin: 0 0.25em;
+    border-radius: 15px;
+    margin: 0 0.5em;
     cursor: pointer;
 }
 
 .entry .headshot{
 	position: relative;
-	float: left;
 }
 
 .entry .headshot:after {
@@ -724,11 +742,17 @@ header .hero h1{
     top: 0;
     left: 0;
 }
-
-.headshot:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+.entry .status{
+	text-align: center;
+	color: white;
+	padding: 4px;
+	overflow: hidden;
+}
+.entry.alumni .status{
+	background-color: black;
+}
+.entry.current .status{
+	background-color: #c8102e;
 }
 
 .entry .details{
