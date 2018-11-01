@@ -686,6 +686,7 @@ header .hero h1{
 .entry .image-slider{
 	position: relative;
 	overflow: hidden;
+    border: 3px solid white;
 }
 .image-slider:after {
     content: "";
@@ -706,6 +707,7 @@ header .hero h1{
 .entry .image-slider .slide img{
 	float: left;
 	width: 33.333%;
+    border: 3px solid white;
 }
 .entry .image-slider .slide input[type='radio']{
 	width: 0;
