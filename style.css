@@ -48,7 +48,7 @@
 @font-face{
 	font-family: "LeagueGothic";
 	src: url("https://ronal-infante.github.io/UHID-graduate-showcase/assets/UHFonts/LeagueGothic-Regular.otf") format("opentype");
-	font-weight: 400;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -676,6 +676,7 @@ header .hero h1{
 
 .entry .image-slider{
 	position: relative;
+	overflow: hidden;
 }
 .entry .image-slider .slide:first-of-type{	
 	position: absolute;
@@ -692,6 +693,10 @@ header .hero h1{
 	width: 33.333%;
 }
 .entry .image-slider .nav-dots{
+}
+.entry .image-slider .nav-dots input[type='radio']{
+	position: absolute;
+	opacity: 0;
 }
 .entry .image-slider .nav-dots label{
     display: inline-block;
