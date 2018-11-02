@@ -676,7 +676,8 @@ header .hero h1{
   margin-right: 8px;
 }
 
-.entry{
+.entry img{
+	max-width: 250px;
 }
 
 .entry:nth-of-type(even) {
