@@ -77,14 +77,59 @@ $(document).ready(function(){
 
   function filters(){
 
-    $('form input').click(function(){
-      var val = $(this).attr('value');
-      $('.entry').each(function(){
-        if( $(this).hasClass(val) || $(this).data('status') == val ){ 
-          if( $(this).hasClass('hidden') ){ $(this).removeClass('hidden'); }
+    var s = ['current','alumni'],
+        f = [];
+
+    function addRemoveFilter(e){
+      if ($(e).is(':checked')) {
+        if($(e).attr('name') == 'status'){s.push(e.value);}
+        else{f.push(e.value);}
+      } else{
+        if($(e).attr('name') == 'status'){
+          if( $.inArray(e.value,s) >= 0 ){
+            s.splice($.inArray(e.value,s),1);
+          }
+        } else{
+          if( $.inArray(e.value,f) >= 0 ){
+            f.splice($.inArray(e.value,f),1);
+          }
         }
-        else{ $(this).addClass('hidden'); }
+      }
+    }
+
+    function refreshEntries(){
+
+      $('.entry').each(function(){
+        if( !$(this).hasClass('hidden') ){ $(this).addClass('hidden') };
       });
+
+      $('.entry').each(function(j){
+        var matchS = false, 
+            matchF = false; 
+
+        if(s.length == 0) { 
+          matchS = true; 
+        } else{
+          for (var i = 0; i < $('form input[name="status"]').length; i++) {
+            if( $(this).data('status') == s[i] ){ matchS = true; break; }
+          }
+        }
+        if(f.length == 0){
+          matchF = true;
+        } else{
+          for (var i = 0; i < $('form input[name="focus"]').length; i++) {
+            if( $(this).hasClass(f[i]) ){ matchF = true; break; }
+          }
+        }
+
+        if( matchS && matchF ){ $(this).removeClass('hidden'); }
+
+      });
+    }
+
+    $('form input').click(function(){ 
+      addRemoveFilter(this);      
+      refreshEntries();
     });
 
   }

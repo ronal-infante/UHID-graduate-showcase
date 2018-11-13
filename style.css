@@ -755,7 +755,7 @@ header .hero h1{
   width: 100%;
 }
 
-.entry.current .headshot-container:after {
+.entry[data-status="current"] .headshot-container:after {
     content: "Current";
     color: white;
     display: block;
@@ -764,7 +764,7 @@ header .hero h1{
     padding: 4px;
     overflow: hidden;
 }
-.entry.alumni .headshot-container:after {
+.entry[data-status="alumni"] .headshot-container:after {
     content: "Alumni";
     color: white;
     display: block;
