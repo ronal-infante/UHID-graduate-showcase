@@ -121,6 +121,7 @@ a {
   -o-transition:      color .25s ease;
   -moz-transition:    color .25s ease;
   transition:         color .25s ease;
+  word-break: break-all;
 }
 
 a:focus {
