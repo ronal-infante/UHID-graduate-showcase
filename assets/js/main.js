@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   for (var i = 0; i < entries.length; i++) {
     var eObj = {};
-    eObj.content = entries.eq(i).outerHTML;
+    eObj.content = entries.eq(i)[0].outerHTML;
     eObj.sortVal = entries.eq(i).data('grad');
     if(entries.eq(i).data('status') == "current"){
       curr.push(eObj);
@@ -29,65 +29,64 @@ $(document).ready(function(){
   });
 
 
-//   carousel();
-//   filters();
+  carousel();
+  filters();
 
-//   function carousel() {
+  function carousel() {
 
-//     var intervals = [];
-//     function increment(i,j){
-//     	if(typeof j == 'undefined'){j = 0;}
-//       return function(){
-//       	var s = $(".entry").eq(i).find(".slide-container .slide"),
-//         		d = $(".entry").eq(i).find(".nav-dots label");
-//         s.each(function(k){$(this).removeClass("on")});
-//         d.each(function(k){$(this).removeClass("on")});
-//         if (j > s.length-1) {j = 0}  
-//         $(s[j]).addClass("on");
-//         $(d[j]).addClass("on");
-//         j++;
-//       }
-//     }
-//     function clear(i){
-//       return function(){
-//         clearInterval(intervals[i]);
-//       }
-//     }
-//     function startSlides(i){
-//       return function(){
-//         clear(i)();
-//         intervals[i] = setInterval(increment(i), 5000);
-//       }
-//     }
-//     function dots(i,j){
-//       return function(){
-//         clear(i)();
-//         increment(i,j)();
-//       }
-//     }
+    var intervals = [];
+    function increment(i,j){
+    	if(typeof j == 'undefined'){j = 0;}
+      return function(){
+      	var s = $(".entry").eq(i).find(".slide-container .slide"),
+        		d = $(".entry").eq(i).find(".nav-dots label");
+        s.each(function(k){$(this).removeClass("on")});
+        d.each(function(k){$(this).removeClass("on")});
+        if (j > s.length-1) {j = 0}  
+        $(s[j]).addClass("on");
+        $(d[j]).addClass("on");
+        j++;
+      }
+    }
+    function clear(i){
+      return function(){
+        clearInterval(intervals[i]);
+      }
+    }
+    function startSlides(i){
+      return function(){
+        clear(i)();
+        intervals[i] = setInterval(increment(i), 5000);
+      }
+    }
+    function dots(i,j){
+      return function(){
+        clear(i)();
+        increment(i,j)();
+      }
+    }
     
-//     $('.entry').each(function(i) {
-//       startSlides(i)();
-//       $(this).find(".nav-dots label").each(function(j){
-//         $(this).click(dots(i,j));
-//       });
-//     });
+    $('.entry').each(function(i) {
+      startSlides(i)();
+      $(this).find(".nav-dots label").each(function(j){
+        $(this).click(dots(i,j));
+      });
+    });
     
-//   }
+  }
 
-//   function filters(){
+  function filters(){
 
-//     function filterEntries(value){
-//       $('.entry').each(function(i){
-//         if( !$(this).hasClass(value) ){ $(this).addClass('hidden'); }
-//         else{ if( $(this).hasClass('hidden') ){ $(this).removeClass('hidden'); } }
-//       })
-//     }
+    $('form input').click(function(){
+      var val = $(this).attr('value');
+      $('.entry').each(function(){
+        if( $(this).hasClass(val) || $(this).data('status') == val ){ 
+          if( $(this).hasClass('hidden') ){ $(this).removeClass('hidden'); }
+        }
+        else{ $(this).addClass('hidden'); }
+      });
+    });
 
-//     $('form input').click(function {
-//         filterEntries( $(this).attr('value') )();
-//     });
-
-//   }
+  }
   
 });
