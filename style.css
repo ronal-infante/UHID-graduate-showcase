@@ -649,6 +649,7 @@ body .no-padding {
   margin-bottom: 0;
 }
 .clear{ clear: both; }
+.hidden{ display: none; opacity: 0; }
 
 
 header .hero{
@@ -753,17 +754,24 @@ header .hero h1{
   left: 0;
   width: 100%;
 }
-.entry .status{
-  text-align: center;
-  color: white;
-  padding: 4px;
-  overflow: hidden;
+
+.entry.current .headshot-container:after {
+    content: "Current";
+    color: white;
+    display: block;
+    background-color: #c8102e;
+    text-align: center;
+    padding: 4px;
+    overflow: hidden;
 }
-.entry.alumni .status{
-  background-color: black;
-}
-.entry.current .status{
-  background-color: #c8102e;
+.entry.alumni .headshot-container:after {
+    content: "Alumni";
+    color: white;
+    display: block;
+    background-color: black;
+    text-align: center;
+    padding: 4px;
+    overflow: hidden;
 }
 
 .entry .details{
