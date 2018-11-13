@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   for (var i = 0; i < entries.length; i++) {
     var eObj = {};
-    eObj.content = entries.eq(i).html();
+    eObj.content = entries.eq(i).outerHTML;
     eObj.sortVal = entries.eq(i).data('grad');
     if(entries.eq(i).data('status') == "current"){
       curr.push(eObj);
