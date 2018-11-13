@@ -5,7 +5,7 @@ $(document).ready(function(){
       container = $('#entry-container'),
       entries = $('.entry');
 
-  for (var i = 0; i < entries.size(); i++) {
+  for (var i = 0; i < entries.length; i++) {
     var eObj = {};
     eObj.content = entries.eq(i).html();
     eObj.sortVal = entries.eq(i).data('grad');
