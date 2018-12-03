@@ -56,7 +56,7 @@ $(document).ready(function(){
     function startSlides(i){
       return function(){
         clear(i)();
-        intervals[i] = setInterval(increment(i), 10000);
+        intervals[i] = setInterval(increment(i), 5000);
       }
     }
     function dots(i,j){

@@ -697,12 +697,11 @@ header .hero h1{
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 1s ease-in-out;
-  width: 0;
+  transition: opacity 1.5s ease-in-out;
+  width: auto;
   opacity: 0;
 }
 .entry .image-slider .slide.on{	
-  width: auto;
   opacity: 1;
 }
 .entry .image-slider .slide img{
@@ -728,7 +727,7 @@ header .hero h1{
   border-radius: 15px;
   margin: 0 0.5em;
   cursor: pointer;
-  transition: background 1s ease-in-out;
+  transition: background 1.5s ease-in-out;
 }
 .entry .image-slider .nav-dots label.on{
   background: rgba(200, 16, 46,0.5);
