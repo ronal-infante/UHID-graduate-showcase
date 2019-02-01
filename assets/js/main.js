@@ -40,10 +40,10 @@ $(document).ready(function(){
       return function(){
       	var s = $(".entry").eq(i).find(".slide-container .slide"),
         		d = $(".entry").eq(i).find(".nav-dots label");
-        s.each(function(k){$(this).removeClass("on")});
+        s.each(function(k){$(this).fadeOut( 1500 )});
         d.each(function(k){$(this).removeClass("on")});
         if (j > s.length-1) {j = 0}  
-        $(s[j]).addClass("on");
+        $(s[j]).fadeIn( 1500 );
         $(d[j]).addClass("on");
         j++;
       }

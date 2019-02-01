@@ -661,7 +661,7 @@ header .hero h1{
   display: inline-block;
   letter-spacing: 0;
   margin: 0;
-  padding: 0.625rem 1.25rem 0.625rem 0.75em;
+  padding: 0.625rem 1.25rem 0.625rem 0.75rem;
   line-height: 1;
 }
 
@@ -675,8 +675,9 @@ header .hero h1{
   margin-right: 8px;
 }
 
-.entry img{
-	max-width: 250px;
+.entry img,
+.entry .xr{
+	/*max-width: 250px;*/
 }
 
 .entry:nth-of-type(odd) {
@@ -697,13 +698,17 @@ header .hero h1{
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 1.5s ease-in-out;
-  width: auto;
-  opacity: 0;
+/*  transition: opacity 1.5s ease-in-out;
+*/  width: auto;
+  /*opacity: 0;
+  display: none;*/
 }
 .entry .image-slider .slide.on{	
   opacity: 1;
+  display: block;
 }
+
+.entry .image-slider .slide .xr,
 .entry .image-slider .slide img{
   float: left;
   width: 33.333%;
