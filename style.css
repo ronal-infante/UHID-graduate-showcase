@@ -771,7 +771,8 @@ header .hero h1{
     overflow: hidden;
 }
 
-.entry .details{
+.entry .details {
+    height: 280px;
 }
 
 
