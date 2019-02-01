@@ -680,10 +680,6 @@ header .hero h1{
 	/*max-width: 250px;*/
 }
 
-.entry:nth-of-type(odd) {
-  clear: left;
-}
-
 .entry .image-slider{
   position: relative;
   overflow: hidden;
