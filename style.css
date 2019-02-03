@@ -666,10 +666,13 @@ header .hero h1{
 }
 
 
+#filter fieldset > div{
+  margin-bottom: 1em;
+}
 #filter label{
   display: block;
   font-size: 1.3rem;
-
+  margin: 0.25em 0;
 }
 #filter label input{
   margin-right: 8px;
