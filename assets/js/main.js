@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var curr = [],
       alum = [],
-      container = $('#entry-container'),
+      container = $('#IDStudents'),
       entries = $('.entry');
 
   for (var i = 0; i < entries.length; i++) {
