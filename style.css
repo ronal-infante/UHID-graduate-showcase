@@ -687,11 +687,11 @@ header .hero h1{
 }
 #IDStudentsForm form .filter-name:before{
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   border-radius: 3px;
   border: 2px solid #c8102e;
-  margin-top: 6px;
+  margin-top: 4px;
   margin-left: -30px;
   margin-right: 8px; 
   float: left;
