@@ -114,7 +114,10 @@ body {
   background: #FFFFFF;
 }
 
-section{ margin: 3.375em 0; }
+section{ 
+  overflow: hidden;
+  margin: 3.375em 0; 
+}
 
 a {
   color: #c8102e;
@@ -667,7 +670,7 @@ header .hero h1{
   line-height: 1;
 }
 
-#filter{ 
+#IDStudentsForm{ 
   background: #f2f2f2; 
 }
 #filter h4{ 
