@@ -16,24 +16,27 @@
 				<h1>Master's Students</h1>
 			</div>
 		</header>
-		<div class="col-sm-12">
-			<h2>We are the faces of the University of Houston's Industrial Design Master's program. <span style="color: #c8102e;">Hire us.</span></h2>
-		</div>
+		<section>
+			<div class="col-sm-12">
+				<h2>We are the faces of the University of Houston's Industrial Design Master's program. <span style="color: #c8102e;">Hire us.</span></h2>
+			</div>
+		</section>
+		<section>
+			<form id="filter" class="col-sm-12">
+				<h3>Filter by:</h3>
 
-		<form id="filter" class="col-sm-12">
-			<fieldset class="col-sm-12">
-				<legend class="h3">Filter by:</legend>
-
-				<div class="col-sm-12 col-md-4 no-padding" style="margin-bottom: 1em;">
+				<div class="col-sm-12 col-md-4">
 					<h4>Status</h4>
-					<label onclick="" for="current">
-						<input id="current" name="status" type="checkbox" value="current" checked><span class="filter-name">Current Students</span>
-					</label>
-					<label onclick="" for="alumni">
-						<input id="alumni" name="status" type="checkbox" value="alumni" checked><span class="filter-name">Alumni</span>
-					</label>
+					<div>
+						<label onclick="" for="current">
+							<input id="current" name="status" type="checkbox" value="current" checked><span class="filter-name">Current Students</span>
+						</label>
+						<label onclick="" for="alumni">
+							<input id="alumni" name="status" type="checkbox" value="alumni" checked><span class="filter-name">Alumni</span>
+						</label>
+					</div>
 				</div>
-				<div class="col-sm-12 col-md-8 no-padding">
+				<div class="col-sm-12 col-md-8">
 					<h4>Focus</h4>
 					<div style="columns: 2">
 						<label onclick="" for="electronics">
@@ -62,10 +65,10 @@
 						</label>
 					</div>
 				</div>
-			</fieldset>
-		</form>
+			</form>
+		</section>
 
-		<div id="entry-container">
+		<section id="IDStudents">
 			<div class="entry col-sm-12 col-md-6" data-status="current" data-grad="999999">
 				<div class="image-slider"><div class="slide-container">
 					<div class="slide">
@@ -683,7 +686,7 @@
 					<p><strong>Interests: </strong>###</p>
 				</div>
 			</div>
-		</div>
+		</section>
 
 	</body>
 	<script type="text/javascript" src="assets/js/main.js"></script>

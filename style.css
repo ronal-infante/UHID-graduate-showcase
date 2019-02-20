@@ -114,6 +114,8 @@ body {
   background: #FFFFFF;
 }
 
+section{ margin: 3.375em 0; }
+
 a {
   color: #c8102e;
   text-decoration: none;
@@ -665,17 +667,33 @@ header .hero h1{
   line-height: 1;
 }
 
-
-#filter fieldset > div{
-  margin-bottom: 1em;
+#filter{ 
+  background: #f2f2f2; 
+}
+#filter h4{ 
+  color: #c8102e;
 }
 #filter label{
   display: block;
   font-size: 1.3rem;
   margin: 0.25em 0;
+  padding-left: 30px;
 }
 #filter label input{
-  margin-right: 8px;
+  display: none;
+}
+#filter .filter-name:before{
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 2px solid #c8102e;
+  margin-left: -30px;
+  margin-right: 8px; 
+  float: left;
+}
+#filter label input:checked ~ #filter .filter-name:before{
+  background: #c8102e;
 }
 
 .entry img,
@@ -724,14 +742,14 @@ header .hero h1{
   display: inline-block;
   width: 15px;
   height: 15px;
-  border: 2px solid rgba(200, 16, 46,0.5);
+  border: 2px solid #c8102e;
   border-radius: 15px;
   margin: 0 0.5em;
   cursor: pointer;
   transition: background 1.5s ease-in-out;
 }
 .entry .image-slider .nav-dots label.on{
-  background: rgba(200, 16, 46,0.5);
+  background: #c8102e;
 }
 
 .entry .headshot-container{
