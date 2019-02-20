@@ -696,7 +696,7 @@ header .hero h1{
   margin-right: 8px; 
   float: left;
 }
-#IDStudentsForm form input:checked ~ #IDStudentsForm form .filter-name:before{
+#IDStudentsForm form input:checked ~ .filter-name:before{
   background: #c8102e;
 }
 
