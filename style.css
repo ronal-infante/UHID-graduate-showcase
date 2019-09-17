@@ -126,7 +126,6 @@ a {
   -o-transition:      color .25s ease;
   -moz-transition:    color .25s ease;
   transition:         color .25s ease;
-  word-break: break-all;
 }
 
 a:focus {
@@ -160,12 +159,12 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4 { 
-  font-family: 'LeagueGothic', 'Helvetica', Arial, sans-serif;
+  font-family: 'LeagueGothic', sans-serif;
 }
 
 h5, .h5,
 h6, .h6{
-  font-family: 'Milo', 'Helvetica', Arial, sans-serif;
+  font-family: 'Milo', sans-serif;
 }
 
 h1, .h1 { 
@@ -670,9 +669,34 @@ header .hero h1{
   line-height: 1;
 }
 
-#IDStudentsForm{ 
-  background: #f2f2f2; 
+.breadcrumb {
+    background: none;
+    border-radius: 0;
+    font-family: 'Milo';
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1em 0;
 }
+.breadcrumb > li {
+    float: none;
+    margin: 0;
+    display: inline;
+}
+.breadcrumb > li:not(:last-child):after {
+    color: inherit;
+    content: '> ';
+    display: inline;
+    padding-left: 0.5em;
+    padding-right: 0.3em;
+}
+.breadcrumb .active {
+    color: #54585A;
+    font-weight: normal;
+}
+
+
+#IDStudentsForm{}
 #IDStudentsForm form h4{ 
   color: #c8102e;
 }
@@ -698,6 +722,10 @@ header .hero h1{
 }
 #IDStudentsForm form input:checked ~ .filter-name:before{
   background: #c8102e;
+}
+
+.entry a{
+  word-break: break-all;
 }
 
 .entry img,
@@ -1143,3 +1171,16 @@ header .hero h1{
   }
 }
 
+
+@media screen and (min-width: 1921px){
+
+html {
+     background: #333; 
+}
+body {
+    background: white;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+}
