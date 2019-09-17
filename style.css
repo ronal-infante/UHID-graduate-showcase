@@ -736,7 +736,6 @@ nav{ overflow: hidden; }
 
 .entry .image-slider{
   position: relative;
-  overflow: hidden;
   border: 3px solid white;
 }
 .image-slider:after {
@@ -766,10 +765,10 @@ nav{ overflow: hidden; }
 }
 
 .entry .image-slider .nav-dots {
-  position: absolute;
-  bottom: 4px;
-  left: 50%;
-  margin-left: -31px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -30px;
 }
 .entry .image-slider .nav-dots label{
   display: inline-block;
