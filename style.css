@@ -669,6 +669,7 @@ header .hero h1{
   line-height: 1;
 }
 
+nav{ overflow: hidden; }
 .breadcrumb {
     background: none;
     border-radius: 0;
