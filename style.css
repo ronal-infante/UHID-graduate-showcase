@@ -677,7 +677,6 @@ nav{ overflow: hidden; }
     font-size: 1rem;
     line-height: 1.5;
     margin: 0;
-    padding: 1em 0;
 }
 .breadcrumb > li {
     float: none;
