@@ -824,10 +824,11 @@ nav{ overflow: hidden; }
     overflow: hidden;
 }
 .entry[data-status="visiting"] .headshot-container:after {
-    content: "visiting";
-    color: white;
+    content: "Visiting";
+    color: #c8102e;
     display: block;
-    background-color: #ff0a33;
+    background-color: #ffffff;
+    border: 2px solid #c8102e;
     text-align: center;
     padding: 4px;
     overflow: hidden;
