@@ -9,7 +9,7 @@ $(document).ready(function(){
     var eObj = {};
     eObj.content = entries.eq(i)[0].outerHTML;
     eObj.sortVal = entries.eq(i).data('grad');
-    if(entries.eq(i).data('status') == "current"){
+    if(entries.eq(i).data('status').includes("current")){
       curr.push(eObj);
     } else{
       alum.push(eObj);

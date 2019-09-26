@@ -823,7 +823,7 @@ nav{ overflow: hidden; }
     padding: 4px;
     overflow: hidden;
 }
-.entry[data-status="visiting"] .headshot-container:after {
+.entry[data-status*="visiting"] .headshot-container:after {
     content: "Visiting";
     color: #c8102e;
     display: block;
