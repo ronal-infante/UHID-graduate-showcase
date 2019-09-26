@@ -823,6 +823,15 @@ nav{ overflow: hidden; }
     padding: 4px;
     overflow: hidden;
 }
+.entry[data-status="visiting"] .headshot-container:after {
+    content: "visiting";
+    color: white;
+    display: block;
+    background-color: #ff0a33;
+    text-align: center;
+    padding: 4px;
+    overflow: hidden;
+}
 
 .entry .details {
     height: 280px;
