@@ -805,33 +805,34 @@ nav{ overflow: hidden; }
   width: 100%;
 }
 
-.entry[data-status="current"] .headshot-container:after {
-    content: "Current";
+.entry .headshot-container:after {
+    content: "";
     color: white;
     display: block;
-    background-color: #c8102e;
     text-align: center;
     padding: 4px;
-    overflow: hidden;
+}
+.entry[data-status="current"] .headshot-container:after {
+    content: "Current";
+    background-color: #c8102e;
+    border: 2px solid #c8102e;
 }
 .entry[data-status="alumni"] .headshot-container:after {
     content: "Alumni";
-    color: white;
-    display: block;
     background-color: black;
-    text-align: center;
-    padding: 4px;
-    overflow: hidden;
+    border: 2px solid black;
 }
-.entry[data-status*="visiting"] .headshot-container:after {
+.entry[data-status*="visiting"][data-status*="current"] .headshot-container:after {
     content: "Visiting";
     color: #c8102e;
-    display: block;
     background-color: #ffffff;
     border: 2px solid #c8102e;
-    text-align: center;
-    padding: 4px;
-    overflow: hidden;
+}
+.entry[data-status*="visiting"][data-status*="alumni"] .headshot-container:after {
+    content: "Visiting";
+    color: black;
+    background-color: #ffffff;
+    border: 2px solid black;
 }
 
 .entry .details {
