@@ -10,7 +10,7 @@ View the live content: [Industrial Design Master's Students](https://ronal-infan
 
 ![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy.jpg)
 
-| ![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy-5.jpg) | ![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy-4.jpg) |
+![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy-5.jpg) ![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy-4.jpg)
 
 
 
