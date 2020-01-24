@@ -8,7 +8,7 @@ Learn more: [Showcasing UH’s Talented ID Graduates | ronalinfante.com](http://
 
 View the live content: [Industrial Design Master's Students](https://ronal-infante.github.io/UHID-graduate-showcase)
 
-
+---
 
 ![](http://ronalinfante.com/wp-content/uploads/2018/12/Dribble-Copy.jpg)
 
